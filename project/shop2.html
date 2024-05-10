@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/b3a4e89b33.js"
+      crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- loading -->
+    <div id="loading">
+      <div class="load">
+    <div class="loader">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div></div>
+  </div>
+    <div id="content">
+    <header>
+      <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+      <ul id="navbar">
+           <li><a  href="index.html#hero">Accueil</a></li>
+            <li><a class="active" href="shop.html">Boutique</a></li>
+            <li><a href="about.html" >À propos</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="cart.html"><i id="bag1" class="fa-solid fa-bag-shopping"></i></a></li>
+            <div class="btnsign">
+            <a href="sign up.html">
+            <button class="cssbuttons-io ">
+            <span> SignUp</span>
+            </button>
+            </a>
+            <a href="login.html">
+            <button class="cssbuttons-io io1">
+            <span> login</span>
+            </button>
+            </a></div>
+            <i id="close" class="fa-solid fa-xmark"></i>
+    </ul>
+      <div id="mobile">
+        <i id="bars" class="fa-solid fa-bars" style="z-index: 20p"></i>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+    </header>
+    <a><i id="cart-plus" class="fa-solid fa-cart-plus"><span id="span"></span></i></a>
+    <section id="shop-page">
+      <h2>#Style-pour-hommes</h2>
+      <p>Économisez davantage avec un coupon et jusqu'à 70 % de réduction !</p>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Produits Vedettes</h2>
+        <p>Collection pour Hommes au Design Moderne</p>
+        <div class="cart-tab" id="cart-tab">
+        <!-- close x -->
+        <i id="close2" class="fa-solid fa-xmark"></i>
+        <!-- title -->
+        <h3 style="color: white;">Paniers d'achats</h3>
+        <!-- list of catrs -->
+        <div class="listcart">
+          <div id="tr1" class="list">
+            <div>
+              <a class="remove" id="remove1" onclick="remove(1)"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+            <div>
+              <img src="img/gradution-diploma-toga-hat.jpg" alt="" />
+            </div>
+            <div>Baby t-shirt</div>
+            <div><p id="price">220DH</p></div>
+            <div>
+              <input
+                type="number"
+                value="1"
+                id="Quantity1"
+                onkeyup="total(1)"
+              />
+            </div>
+          </div>
+          <div id="tr2" class="list">
+            <div>
+              <a class="remove" id="remove2" onclick="remove(2)"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+            <div>
+              <img src="img/t-shirt2.jpg" alt="" />
+            </div>
+            <div>Baby t-shirt</div>
+            <div><p id="price">220DH</p></div>
+            <div>
+              <input
+                type="number"
+                value="1"
+                id="Quantity1"
+                onkeyup="total(1)"
+              />
+            </div>
+          </div>
+          <div id="tr3" class="list">
+            <div>
+              <a class="remove" id="remove3" onclick="remove(3)"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+            <div>
+              <img src="img/jacket1.jpg" alt="" />
+            </div>
+            <div>Baby t-shirt</div>
+            <div><p id="price">220DH</p></div>
+            <div>
+              <input
+                type="number"
+                value="1"
+                id="Quantity1"
+                onkeyup="total(1)"
+              />
+            </div>
+          </div>
+          <div id="tr4" class="list">
+            <div>
+              <a class="remove" id="remove4" onclick="remove(4)"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+            <div>
+              <img src="img/jacket2.jpg" alt="" />
+            </div>
+            <div>Baby t-shirt</div>
+            <div><p id="price">220DH</p></div>
+            <div>
+              <input
+                type="number"
+                value="1"
+                id="Quantity1"
+                onkeyup="total(1)"
+              />
+            </div>
+          </div>
+          <div id="tr5" class="list">
+            <div>
+              <a class="remove" id="remove5" onclick="remove(5)"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+            <div>
+              <img src="img/hat1\ \(2\).jpg" alt="" />
+            </div>
+            <div>Baby t-shirt</div>
+            <div><p id="price">220DH</p></div>
+            <div>
+              <input
+                type="number"
+                value="1"
+                id="Quantity1"
+                onkeyup="total(1)"
+              />
+            </div>
+          </div>
+          <div id="tr6" class="list">
+            <div>
+              <a class="remove" id="remove6" onclick="remove(6)"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+            <div>
+              <img src="img/jeans.jpg" alt="" />
+            </div>
+            <div>Baby t-shirt</div>
+            <div><p id="price">220DH</p></div>
+            <div>
+              <input
+                type="number"
+                value="1"
+                id="Quantity1"
+                onkeyup="total(1)"
+              />
+            </div>
+          </div>
+          <div id="tr7" class="list">
+            <div>
+              <a class="remove" id="remove7" onclick="remove(7)"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+            <div>
+              <img src="img/hat.jpg" alt="" />
+            </div>
+            <div>Baby t-shirt</div>
+            <div><p id="price">220DH</p></div>
+            <div>
+              <input
+                type="number"
+                value="1"
+                id="Quantity1"
+                onkeyup="total(1)"
+              />
+            </div>
+          </div>
+          <div id="tr8" class="list">
+            <div>
+              <a class="remove" id="remove8" onclick="remove(8)"
+                ><i class="fa-solid fa-trash"></i
+              ></a>
+            </div>
+            <div>
+              <img src="img/fo9iya.jpg" alt="" />
+            </div>
+            <div>Baby t-shirt</div>
+            <div><p id="price">220DH</p></div>
+            <div>
+              <input
+                type="number"
+                value="1"
+                id="Quantity1"
+                onkeyup="total(1)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="totalcart">
+          <div class="total-title">Total</div>
+          <div class="total-price">0$</div>
+        </div>
+        <div class="btn">
+          <a class="close normal" id="closebtn"><button>Fermer</button></a>
+          <a href="checkout.html" class="showmore normal" target="_blank"><button>Checkout</button></a>
+        </div>
+      </div>
+      <div class="pro-container">
+        <!-- card1 -->
+        <a href="#"
+          ><div class="pro">
+            <div class="img img17"></div>
+            <div class="des">
+              <span>adidas</span>
+              <h5>cartone astronout t-shirt</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h4>220DH</h4>
+            </div>
+            <a id="cart1"
+              ><i onclick="add(1)" class="fa-solid fa-cart-shopping card"></i
+            ></a></div
+        ></a>
+        <!-- card2 -->
+        <a href="#"
+          ><div class="pro">
+            <div class="img img18"></div>
+            <div class="des">
+              <span>adidas</span>
+              <h5>cartone astronout t-shirt</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h4>220DH</h4>
+            </div>
+            <a id="cart2" onclick="add(2)"
+              ><i class="fa-solid fa-cart-shopping card"></i
+            ></a></div
+        ></a>
+        <!-- card3 -->
+        <a href="#"
+          ><div class="pro">
+            <div class="img img19"></div>
+            <div class="des">
+              <span>adidas</span>
+              <h5>cartone astronout t-shirt</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h4>220DH</h4>
+            </div>
+            <a id="cart3" onclick="add(3)"
+              ><i class="fa-solid fa-cart-shopping card"></i
+            ></a></div
+        ></a>
+        <!-- card4 -->
+        <a href="#"
+          ><div class="pro">
+            <div class="img img20"></div>
+            <div class="des">
+              <span>adidas</span>
+              <h5>cartone astronout t-shirt</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h4>220DH</h4>
+            </div>
+            <a id="cart4" onclick="add(4)"
+              ><i class="fa-solid fa-cart-shopping card"></i
+            ></a></div
+        ></a>
+        <!-- card5 -->
+        <a href="#"
+          ><div class="pro">
+            <div class="img img21"></div>
+            <div class="des">
+              <span>adidas</span>
+              <h5>cartone astronout t-shirt</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h4>220DH</h4>
+            </div>
+            <a id="cart5" onclick="add(5)"
+              ><i class="fa-solid fa-cart-shopping card"></i
+            ></a></div
+        ></a>
+        <!-- card6 -->
+        <a href="#"
+          ><div class="pro">
+            <div class="img img22"></div>
+            <div class="des">
+              <span>adidas</span>
+              <h5>cartone astronout t-shirt</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h4>220DH</h4>
+            </div>
+            <a id="cart6" onclick="add(6)"
+              ><i class="fa-solid fa-cart-shopping card"></i
+            ></a></div
+        ></a>
+        <!-- card7 -->
+        <a href="#"
+          ><div class="pro pro7">
+            <div class="img img23"></div>
+            <div class="des">
+              <span>adidas</span>
+              <h5>cartone astronout t-shirt</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h4>220DH</h4>
+            </div>
+            <a id="cart7" onclick="add(7)"
+              ><i class="fa-solid fa-cart-shopping card"></i
+            ></a></div
+        ></a>
+        <!-- card8 -->
+        <a href="#"
+          ><div class="pro pro8">
+            <div class="img img24"></div>
+            <div class="des">
+              <span>adidas</span>
+              <h5>cartone astronout t-shirt</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h4>220DH</h4>
+            </div>
+            <a id="cart8" onclick="add(8)"
+              ><i class="fa-solid fa-cart-shopping card"></i
+            ></a></div
+        ></a>
+      </div>
+    </section>
+    <section id="pagination" class="section-p1">
+        <a href="shop.html#product1">1</a>
+        <a class="page">2</a>
+        <a href="shop.html#product1"><i class="fa-solid fa-arrow-right"></i></a>
+
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newtext">
+        <h4>Entrer un code coupon </h4>
+        <p>
+           et ganer un reduction jusqu 70%, Inscrivez-vous pour recevoir coupon gratuit de 30%!
+          <span><a href="sign up.html" style="color:rgb(80, 139, 234); text-decoration: underline;">Inscrivez-vous</a></span>
+        </p>
+      </div>
+      <div class="form">
+        <div class="for">
+        <input type="text" id="coupon-inp"
+            placeholder="Entrez votre coupon" required />
+        <a class="normal" ><button onclick="Apply()" style="font-size: 22px;">Appliquer</button></a>
+        </div>
+      </div>
+      <span id="coupon-text"></span>
+
+    </section>
+    <footer class="section-p1">
+       <div class="col">
+        <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+        <h4>Contact</h4>
+        <p><b>Adresse : </b>rue royale Rabat sale maroc</p>
+        <p><b>Téléphone : </b>+2126-9734-7505</p>
+        <p><b>Horaires : </b>08h00-18h00, lun-sam</p>
+        <div class="follow">
+            <h4>Suivez-nous</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+       <h4>À propos</h4>
+       <a class="underline" href="about.html">À propos de nous</a>
+       <a class="underline" href="">Politique de confidentialité</a>
+       <a class="underline" href="">Conditions générales</a>
+    </div>
+    <div class="col">
+       <h4>Mon compte</h4>
+       <a class="underline" href="">S'inscrire</a>
+       <a class="underline" href="">Politique de confidentialité</a>
+       <a class="underline" href="">Conditions générales</a>
+    </div>
+    <div class="col payment">
+        <p>Passerelle de paiement sécurisée</p>
+        <a><img src="img/pngkey.com-credit-card-png-134808.png" alt=""
+        width="150"></a>
+    </div>
+    <div class="copyright">
+        <p>&copy;2023 V-Express Shopping</p>
+    </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

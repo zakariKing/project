@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b3a4e89b33.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+      
+    <!-- Chargement -->
+    <div id="loading">
+      <div class="load">
+        <div class="loader">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <header>
+        <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+        <ul id="navbar">
+          <li><a href="index.html#hero">Accueil</a></li>
+          <li><a href="shop.html">Boutique</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html" class="active"
+              ><i id="bag1" class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+          <div class="btnsign">
+            <a href="sign up.html">
+            <button class="cssbuttons-io ">
+            <span> SignUp</span>
+            </button>
+            </a>
+            <a href="login.html">
+            <button class="cssbuttons-io io1">
+            <span> login</span>
+            </button>
+            </a></div>
+          <i id="close" class="fa-solid fa-xmark"></i>
+        </ul>
+        <div id="mobile">
+          <i id="bars" class="fa-solid fa-bars" style="z-index: 20p"></i>
+          <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+      </header>
+      <section id="Contact" class="section-m1 section-p1">
+        <h2>#Ajout-panier</h2>
+        <p>Nous sommes prêts à vous entendre</p>
+      </section>
+      <section id="cart" class="section-p1">
+        <table width="80%">
+          <thead>
+            <tr>
+              <td>Supprimer</td>
+              <td>Image</td>
+              <td>Produit</td>
+              <td>Prix</td>
+              <td>Quantité</td>
+              <td>Sous-total</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="tr1">
+              <td>
+                <a class="remove" id="remove1" onclick="remove(1)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+              <td>
+                <img src="img/baby-clothes-boys-wooden-background.jpg" alt="" />
+              </td>
+              <td>T-shirt bébé</td>
+              <td><p id="price">120$</p></td>
+              <td>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)"
+                />
+              </td>
+              <td><p id="Total1">120$</p></td>
+            </tr>
+            <tr id="tr2">
+              <td>
+                <a class="remove" id="remove2" onclick="remove(2)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+              <td>
+                <img
+                  src="img/black-jacket-cloth-hanger-with-white-wall.jpg"
+                  alt=""
+                />
+              </td>
+              <td>T-shirt bébé</td>
+              <td><p id="">120$</p></td>
+              <td>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity2"
+                  onkeyup="total(2)"
+                />
+              </td>
+              <td><p id="Total2">120$</p></td>
+            </tr>
+            <tr id="tr3">
+              <td>
+                <a class="remove" id="remove3" onclick="remove(3)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+              <td><img src="img/shoes1.jpg" alt="" /></td>
+              <td>T-shirt bébé</td>
+              <td><p id="">120$</p></td>
+              <td>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity3"
+                  onkeyup="total(3)" onkeyup="subtotal(4)"
+                />
+              </td>
+              <td><p id="Total3">120$</p></td>
+            </tr>
+            <tr id="add">
+              <td>
+                <a><i class="fa-solid fa-square-plus" onclick="add()"></i></a>
+              </td>
+              <td></td>
+              <td></td
+
+>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="cart-add" class="section-p1">
+        <div id="coupon">
+          <h3>Appliquer le coupon</h3>
+          <div>
+            <input
+              type="text"
+              name=""
+              id="coupon-inp"
+              placeholder="Entrez votre coupon"/>
+            <a class="normal"><button id="Apply" onclick="Apply()">Appliquer</button></a>
+          </div>
+        </div>
+        <div id="subtotal">
+          <h3>Total du panier</h3>
+          <table>
+            <tr>
+              <td>Sous-total du panier</td>
+              <td><p id="subtotal" style="border: none;display: inline;">335$<p></td>
+            </tr>
+            <tr>
+              <td>Expédition</td>
+              <td>Gratuit</td>
+            </tr>
+            <tr>
+              <td><b >Total</b></td>
+              <td><b id="total">335$</b></td>
+            </tr>
+          </table>
+          <a class="normal" href="checkout.html"><button id="btn"  >Checkout</button></a>
+        </div>
+      </section>
+
+      <footer class="section-p1">
+        <div class="col">
+          <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+          <h4>Contact</h4>
+          <p><b>Adresse: </b>rue royale Rabat sale maroc</p>
+          <p><b>Téléphone: </b>+2126-9734-7505</p>
+          <p><b>Horaires: </b>08 00-18 00 ,Lun-sam</p>
+          <div class="follow">
+            <h4>Suivez-nous</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>À propos</h4>
+          <a class="underline" href="about.html">À propos de nous</a>
+          <a class="underline" href="">Politique de confidentialité</a>
+          <a class="underline" href="">Termes et conditions</a>
+        </div>
+        <div class="col">
+          <h4>Mon compte</h4>
+          <a class="underline" href="">Inscrivez-vous</a>
+          <a class="underline" href="">Politique de confidentialité</a>
+          <a class="underline" href="">Termes et conditions</a>
+        </div>
+        <div class="col payment">
+          <p>Passerelle de paiement sécurisée</p>
+          <a
+            ><img
+              src="img/pngkey.com-credit-card-png-134808.png"
+              alt=""
+              width="150"
+          /></a>
+        </div>
+        <div class="copyright">
+          <p>&copy;2023 V-Express Shopping</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

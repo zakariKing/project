@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b3a4e89b33.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+      
+    <!-- loading -->
+    <div id="loading">
+      <div class="load">
+    <div class="loader">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div></div>
+  </div>
+    <div id="content">
+    <header>
+      <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+    </header>
+        <section id="checkout">
+          <a href="shop.html" class="close-checkout"><i id="close" class="fa-solid fa-xmark"></i></a>
+    <div class="form" id="form">
+    <h2>Informations personnelles</h2>
+    <form action="">
+        <div>
+            <input type="text" required placeholder="Nom d'utilisateur" pattern="[a-zA-Z]+$">
+            <div>
+                <input type="tel" required placeholder="Téléphone +212 663-627800" pattern="+212 /d{3} /d{6}$" id="Phone"></div>
+            <div><input type="text" required placeholder="Adresse"></div>
+            <div><input type="email" required placeholder="E-mail" pattern="[a-A]+@[a-ZA-z]{5}+.[a-z]{3}"></div>
+            <h2>Informations de la carte</h2>
+            <img src="img/pngkey.com-credit-card-png-134808.png" alt="" width="120px">
+            <div><input type="text" name="" id="" placeholder="Numéro de carte" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$" required></div>
+            <div>
+                <div class="row">
+                    <input type="text" name="" id="" placeholder="MM" pattern="(0[1-9]|1[0-2])$" title="Mois invalide. Veuillez saisir un mois entre 01 et 12." required>
+                    <input type="text" name="" id="" placeholder="AAAA" pattern="[0-9]{4}$" title="Année invalide. Veuillez saisir une année valide." required>
+                    <input type="text" name="" id="" placeholder="CVV" pattern="[0-9]{3}$" title="CVV invalide. Veuillez saisir un CVV à 3 chiffres." required>
+                </div>
+            </div>
+          </div>
+          <a class="normal" ><button type="submit" onclick="Checkoutsubmit()" >Payer</button></a>
+    </form>
+</div>
+    </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

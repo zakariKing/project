@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b3a4e89b33.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <!-- loading -->
+    <div id="loading">
+      <div class="load">
+    <div class="loader">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div></div>
+  </div>
+    <div id="content">
+<!-- header -->
+    <header>
+      <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+      <ul id="navbar">
+           <li><a class="active" href="index.html#hero">Accueil</a></li>
+            <li><a  href="shop.html">Boutique</a></li>
+            <li><a href="about.html" >À propos</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="cart.html"><i id="bag1" class="fa-solid fa-bag-shopping"></i></a></li>
+            <div class="btnsign">
+            <a href="sign up.html">
+            <button class="cssbuttons-io ">
+            <span> SignUp</span>
+            </button>
+            </a>
+            <a href="login.html">
+            <button class="cssbuttons-io io1">
+            <span> login</span>
+            </button>
+            </a></div>
+            <i id="close" class="fa-solid fa-xmark"></i>
+    </ul>
+      <div id="mobile">
+        <i id="bars" class="fa-solid fa-bars" style="z-index: 20p"></i>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+    </header>
+    <a><i id="cart-plus" class="fa-solid fa-cart-plus"><span id="span"></span></i></a>
+    <section id="hero">
+        <div>
+          <h4>Meilleurs Offres</h4>
+          <h2>Offres de grande valeur</h2>
+          <h1>Sur tous les produits</h1>
+          <p>
+            Économisez davantage avec un coupon et jusqu'à 70% de réduction !
+          </p>
+          <a href="#product1"><button>Achetez maintenant</button></a>
+        </div>
+        <div class="offre">
+          <a href="shop.html"><img src="img/sold.jpg" alt="" /></a>
+        </div>
+        
+      </section>
+      <section id="marquee">
+        <marquee
+          bgcolor="#7c7c7c"
+          width="100%"
+          behavior="scroll"
+          scrollamount="18"
+        >
+          Économisez davantage avec un coupon et jusqu'à 70% de réduction !
+          Économisez davantage avec un coupon et jusqu'à 70% de réduction !
+          Économisez davantage avec un coupon et jusqu'à 70% de réduction !
+          Économisez davantage avec un coupon et jusqu'à 70% de réduction !
+        </marquee>
+      </section>
+      <section id="product1" class="section-p1">
+        <h2>Produits Vedettes</h2>
+        <p>Collection pour Hommes au Design Moderne</p>
+        <!-- cart -->
+        <div class="cart-tab" id="cart-tab">
+          <!-- close x -->
+          <i id="close2" class="fa-solid fa-xmark"></i>
+          <!-- title -->
+          <h3 style="color: white">Paniers d'achats</h3>
+          <!-- list of catrs -->
+          <div class="listcart" id="listcart">
+            <div id="tr1" class="list">
+              <div>
+                <a
+                  class="remove"
+                  id="remove1"
+                  onclick="removeFromCart(250), remove(1)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </div>
+              <div>
+                <img src="img/shoes1.jpg" alt="" />
+              </div>
+              <div>Vince rouge</div>
+              <div><p id="price1">250DH</p></div>
+              <div>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)*120"
+                />
+              </div>
+            </div>
+            <div id="tr2" class="list">
+              <div>
+                <a
+                  class="remove"
+                  id="remove2"
+                  onclick="removeFromCart(300), remove(2)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </div>
+              <div>
+                <img src="img/jacket1.jpg" alt="" />
+              </div>
+              <div>Hoodie</div>
+              <div><p id="price">300DH</p></div>
+              <div>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)"
+                />
+              </div>
+            </div>
+            <div id="tr3" class="list">
+              <div>
+                <a
+                  class="remove"
+                  id="remove3"
+                  onclick="removeFromCart(90), remove(3)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </div>
+              <div>
+                <img src="img/hat.jpg" alt="" />
+              </div>
+              <div>Casquette</div>
+              <div><p id="price">90DH</p></div>
+              <div>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)"
+                />
+              </div>
+            </div>
+            <div id="tr4" class="list">
+              <div>
+                <a
+                  class="remove"
+                  id="remove4"
+                  onclick="removeFromCart(210), remove(4)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </div>
+              <div>
+                <img src="img/jeans.jpg" alt="" />
+              </div>
+              <div>jeans</div>
+              <div><p id="price">210DH</p></div>
+              <div>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)"
+                />
+              </div>
+            </div>
+            <div id="tr5" class="list">
+              <div>
+                <a
+                  class="remove"
+                  id="remove5"
+                  onclick="removeFromCart(240), remove(5)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </div>
+              <div>
+                <img
+                  src="img/short-sleeve-shirt-cloth-hanger-with-white-wall-background.jpg"
+                  alt=""
+                />
+              </div>
+              <div>t-shirt noir</div>
+              <div><p id="price">210DH</p></div>
+              <div>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)"
+                />
+              </div>
+            </div>
+            <div id="tr6" class="list">
+              <div>
+                <a
+                  class="remove"
+                  id="remove6"
+                  onclick="removeFromCart(310), remove(6)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </div>
+              <div>
+                <img src="img/tshirt3.jpg" alt="" />
+              </div>
+              <div>t-shirt bleu</div>
+              <div><p id="price">310DH</p></div>
+              <div>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)"
+                />
+              </div>
+            </div>
+            <div id="tr7" class="list">
+              <div>
+                <a
+                  class="remove"
+                  id="remove7"
+                  onclick="removeFromCart(60), remove(7)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </div>
+              <div>
+                <img src="img/hat1.jpg" alt="" />
+              </div>
+              <div>Casquette Noir</div>
+              <div><p id="price">90DH</p></div>
+              <div>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)"
+                />
+              </div>
+            </div>
+            <div id="tr8" class="list">
+              <div>
+                <a
+                  class="remove"
+                  id="remove8"
+                  onclick="removeFromCart(320), remove(8)"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </div>
+              <div>
+                <img src="img/t-shirt2.jpg" alt="" />
+              </div>
+              <div>Collection T-shirt</div>
+              <div><p id="price">210DH</p></div>
+              <div>
+                <input
+                  type="number"
+                  value="1"
+                  id="Quantity1"
+                  onkeyup="total(1)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="totalcart">
+            <div class="total-title">Total</div>
+            <div class="total-price"><p id="t">0DH</p></div>
+          </div>
+          <div class="btn">
+            <a class="close normal" id="closebtn"><button>Fermer</button></a>
+            <a href="checkout.html" class="showmore normal" target="_blank"
+              ><button>Checkout</button></a
+            >
+          </div>
+        </div>
+        <div class="pro-container">
+          <!-- card1 -->
+          <a href="sproduct.html" target="_blank"
+            ><div class="pro">
+              <div class="img img1"></div>
+              <div class="des">
+                <span>Vince</span>
+                <h5>Vince rouge</h5>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>250DH</h4>
+              </div>
+              <a id="cart1"
+                ><i
+                  onclick="addToCart(250),add(1)"
+                  class="fa-solid fa-cart-shopping card"
+                ></i
+              ></a></div
+          ></a>
+          <!-- card2 -->
+          <a href="#"
+            ><div class="pro">
+              <div class="img img2"></div>
+              <div class="des">
+                <span>adidas</span>
+                <h5>Hoodie Grise</h5>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>300DH</h4>
+              </div>
+              <a id="cart2"
+                ><i
+                  onclick="addToCart(300),add(2)"
+                  class="fa-solid fa-cart-shopping card"
+                ></i
+              ></a></div
+          ></a>
+          <!-- card3 -->
+          <a href="#"
+            ><div class="pro">
+              <div class="img img3"></div>
+              <div class="des">
+                <span>Nike</span>
+                <h5>Casquette</h5>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>90DH</h4>
+              </div>
+              <a id="cart3"
+                ><i
+                  onclick="addToCart(90),add(3)"
+                  class="fa-solid fa-cart-shopping card"
+                ></i
+              ></a></div
+          ></a>
+          <!-- card4 -->
+          <a href="#"
+            ><div class="pro">
+              <div class="img img4"></div>
+              <div class="des">
+                <span>V-express</span>
+                <h5>Jeans</h5>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>210DH</h4>
+              </div>
+              <a id="cart4"
+                ><i
+                  onclick="addToCart(210),add(4)"
+                  class="fa-solid fa-cart-shopping card"
+                ></i
+              ></a></div
+          ></a>
+          <!-- card5 -->
+          <a href="#"
+            ><div class="pro">
+              <div class="img img5"></div>
+              <div class="des">
+                <span>V-express</span>
+                <h5>t-shirt noir</h5>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>240DH</h4>
+              </div>
+              <a id="cart5"
+                ><i
+                  onclick="addToCart(240),add(5)"
+                  class="fa-solid fa-cart-shopping card"
+                ></i
+              ></a></div
+          ></a>
+          <!-- card6 -->
+          <a href="#"
+            ><div class="pro">
+              <div class="img img6"></div>
+              <div class="des">
+                <span>adidas</span>
+                <h5>t-shirt bleu</h5>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>310DH</h4>
+              </div>
+              <a id="cart6"
+                ><i
+                  onclick="addToCart(310),add(6)"
+                  class="fa-solid fa-cart-shopping card"
+                ></i
+              ></a></div
+          ></a>
+          <!-- card7 -->
+          <a href="#"
+            ><div class="pro pro7">
+              <div class="img img7"></div>
+              <div class="des">
+                <span>adidas</span>
+                <h5>Casquette Noir</h5>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>60DH</h4>
+              </div>
+              <a id="cart7"
+                ><i
+                  onclick="addToCart(60),add(7)"
+                  class="fa-solid fa-cart-shopping card"
+                ></i
+              ></a></div
+          ></a>
+          <!-- card8 -->
+          <a href="#"
+            ><div class="pro pro8">
+              <div class="img img8"></div>
+              <div class="des">
+                <span>adidas</span>
+                <h5>Collection T-shirt</h5>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>320DH</h4>
+              </div>
+              <a id="cart8"
+                ><i
+                  onclick="addToCart(320),add(8)"
+                  class="fa-solid fa-cart-shopping card"
+                ></i
+              ></a></div
+          ></a>
+        </div>
+      </section>
+      <section id="banner" class="section-m1">
+        <a href="shop.html" class="normal"><button>Explorer</button></a>
+      </section>  
+
+   <section id="newsletter" class="section-p1 section-m1">
+      <div class="newtext">
+        <h4>Entrer un code coupon </h4>
+        <p>
+           et ganer un reduction jusqu 70%, Inscrivez-vous pour recevoir coupon gratuit de 30%!
+          <span><a href="sign up.html" style="color:rgb(80, 139, 234); text-decoration: underline;">Inscrivez-vous</a></span>
+        </p>
+      </div>
+      <div class="form">
+        <div class="for">
+        <input type="text" id="coupon-inp"
+            placeholder="Entrez votre coupon" required />
+        <a class="normal" ><button onclick="Apply()" style="font-size: 22px;">Appliquer</button></a>
+        </div>
+      </div>
+      <span id="coupon-text"></span>
+    </section>
+    <footer class="section-p1">
+       <div class="col">
+        <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+        <h4>Contact</h4>
+        <p><b>Adresse : </b>rue royale Rabat sale maroc</p>
+        <p><b>Téléphone : </b>+2126-9734-7505</p>
+        <p><b>Horaires : </b>08h00-18h00, lun-sam</p>
+        <div class="follow">
+            <h4>Suivez-nous</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+       <h4>À propos</h4>
+       <a class="underline" href="about.html">À propos de nous</a>
+       <a class="underline" href="">Politique de confidentialité</a>
+       <a class="underline" href="">Conditions générales</a>
+    </div>
+    <div class="col">
+       <h4>Mon compte</h4>
+       <a class="underline" href="">S'inscrire</a>
+       <a class="underline" href="">Politique de confidentialité</a>
+       <a class="underline" href="">Conditions générales</a>
+    </div>
+    <div class="col payment">
+        <p>Passerelle de paiement sécurisée</p>
+        <a><img src="img/pngkey.com-credit-card-png-134808.png" alt=""
+        width="150"></a>
+    </div>
+    <div class="copyright">
+        <p>&copy;2023 V-Express Shopping</p>
+    </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

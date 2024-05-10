@@ -1,0 +1,851 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Black+Ops+One&family=Clicker+Script&family=Dancing+Script:wght@400;500&family=Edu+TAS+Beginner:wght@400;500&family=Ephesis&family=Inconsolata&family=Kenia&family=Montserrat:ital,wght@1,200&family=Playpen+Sans:wght@100;300;600;800&family=Roboto:ital,wght@0,100;1,100&family=Saira+Extra+Condensed:wght@100&family=Smooch+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000000;
+}
+/* Custom Scroll bar */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+  background: #1b1816;
+}
+html::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5rem;
+}
+body {
+  padding-top: 50px;
+  width: 100%;
+  overflow-x: hidden;
+}
+div {
+  display: inline-block;
+}
+header {
+  background-color: #060402;
+  opacity: 0.9;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.dropdown-content #ic {
+  position: absolute;
+  left: 13px;
+}
+.dropbtn {
+  background-color: #060402;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 1.2em;
+  border: none;
+  height: 60px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  right: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -30px;
+  background-color: #060402;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 100vh;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content a {
+  font-size: 0.95em;
+  color: rgb(255, 254, 254);
+  padding: 30px 76px;
+  text-decoration: none;
+  display: block;
+  border-top: 1px ridge #0c0b08;
+}
+
+.dropdown-content a:hover {
+  background-color: #000000;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:hover {
+  background-color: #000000;
+  border-radius: 10%;
+}
+.logo {
+  font-family: "roboto", sans-serif;
+  display: inline-block;
+  width: 100px;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: white;
+  font-weight: 1000;
+  cursor: pointer;
+  transition: transform 0.7s;
+  margin-right: 50px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.logoicon {
+  color: #ff4500;
+  position: absolute;
+  bottom: 30px;
+  transition: 0.6s;
+}
+.logoicon:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.navigation a {
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  text-shadow: 3px 3px 10px black;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  text-decoration: none;
+  padding-top: 16px;
+}
+
+.navigation a:hover {
+  background-color: #000000;
+}
+.section1 {
+  height: 100vh;
+  width: 100%;
+}
+.video-wrapper {
+  /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+  z-index: 19;
+  width: 100%;
+  height: 100vh;
+  /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome {
+  font-size: 80px;
+  color: #3a3434;
+  padding-left: 40px;
+  display: flex;
+  width: 60%;
+  position: absolute;
+  top: 120px;
+  z-index: 20;
+}
+.p1 {
+  font-size: 2.2em;
+  color: #3a3434;
+  font-weight: bold;
+  padding-left: 40px;
+  display: flex;
+  width: fit-content;
+  height: 100px;
+  align-items: center;
+  position: absolute;
+  top: 370px;
+  z-index: 20;
+}
+
+p::selection {
+  background-color: #2b2b2c;
+  color: rgb(253, 253, 253);
+}
+
+/* log in & sign up button */
+
+a.forme1 {
+  position: absolute;
+  right: 120px;
+  top: 100px;
+  z-index: 20;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.3s;
+  color: #000000;
+}
+a.forme1:hover {
+  background-color: rgb(31, 182, 96);
+  color: white;
+}
+a.forme2 {
+  position: absolute;
+  right: 120px;
+  top: 170px;
+  z-index: 20;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  color: #000000;
+  transition: 0.3s;
+}
+a.forme2:hover {
+  background-color: rgb(31, 122, 182);
+  color: white;
+}
+/* descover button */
+a.btnd {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  display: grid;
+  align-items: center;
+  padding-right: 20px;
+  font-size: 19px;
+  color: black;
+  opacity: 0.9;
+  z-index: 20;
+}
+a.btnd .fa-solid.fa-magnifying-glass {
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 6px 6px 0;
+  color: rgb(0, 0, 0);
+}
+a.btnd:hover .fa-solid.fa-magnifying-glass {
+  color: white;
+}
+a.btnd:hover {
+  background-color: #0c0b08;
+  color: white;
+}
+.section2 {
+  background: radial-gradient(#162342, #010102);
+  height: 200vh;
+  padding-top: 60px;
+  width: 100%;
+ 
+}
+
+.cateinfo {
+  color: white;
+  font-size: 39px;
+  font-weight: bold;
+  position: absolute;
+  padding-left: 50px;
+  height: 330px;
+}
+.cateinfo p {
+  margin-top: 20px;
+}
+.fa-solid.fa-tag.fa-shake {
+  position: absolute;
+  top: 55px;
+  right: 55px;
+  cursor: pointer;
+}
+.right-icon {
+  position: absolute;
+  top: 41%;
+  right: 40px;
+  font-size: 50px;
+  transition: 0.6s;
+  color: white;
+}
+
+.left-icon {
+  position: absolute;
+  left: 40px;
+  top: 41%;
+  font-size: 50px;
+  transition: 0.6s;
+  color: white;
+}
+.menu-card {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  top: 250px;
+  padding-left: 115px;
+   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  cursor: pointer;
+  height: 330px;
+  width: 232px;
+  margin: 15px;
+  margin-left: 30px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  transition: transform 0.5s;
+  opacity: 0.95;
+}
+.card:hover {
+  transform: translateY(-8px);
+  opacity: 1;
+}
+
+.card1 {
+  background-image: url(image/boy-wearing-green-jacket.jpg);
+  background-repeat: no-repeat;
+  background-size: 230px;
+}
+.card2 {
+  background-image: url(image/black\ shoes.jpg);
+  background-repeat: no-repeat;
+  background-size: 230px;
+}
+.card3 {
+  background-image: url(image/clasique\ hat.jpg);
+  background-repeat: no-repeat;
+  background-size: 230px;
+}
+.card4 {
+  background-image: url(image/jeans.jpg);
+  background-repeat: no-repeat;
+  background-size: 230px;
+}
+.card5 {
+  background-image: url(image/child\ cloths.jpg);
+  background-repeat: no-repeat;
+  background-size: 230px;
+}
+.card6 {
+  background-image: url(image/baby-boy-clothes-white-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 240px;
+}
+.card7 {
+  background-image: url(image/gradution-diploma-toga-hat.jpg);
+  background-repeat: no-repeat;
+  background-size: 230px;
+}
+.card8 {
+  background-image: url(image/white\ shoes.jpg);
+  background-repeat: no-repeat;
+  background-size: 230px;
+}
+.info {
+  font-weight: bold;
+  color: #000000;
+  opacity: 0;
+  display: flex;
+  position: relative;
+  bottom: 168px;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: 0.8s;
+  border-radius: 4px;
+  background-color: #e4e4e436;
+  padding-top: 200px;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(-12px);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 2000;
+}
+.description {
+  font-size: 15px;
+}
+.price {
+  color: #fe5b3d;
+}
+a.Show.more {
+  display: flex;
+  border: #000000 1px solid;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  margin-left: 12px;
+  border-radius: 3px;
+  position: relative;
+  bottom: 220px;
+  opacity: 0;
+  transition: 0.9s;
+}
+a.Show.more:hover {
+  background-color: black;
+  color: white;
+  transition: 0.6s;
+}
+.card:hover .Show.more {
+  opacity: 1;
+  position: relative;
+  bottom: 230px;
+}
+#plus {
+  margin-left: 30px;
+}
+
+.card-icons a {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: 80px;
+  margin-top: 20px;
+  opacity: 0;
+  transition: 0.4s;
+  font-weight: bold;
+  z-index: 23;
+  font-size: 22px;
+  background-color: #d4d4d4;
+  border: none;
+}
+.card-icons a:hover {
+  font-size: 22.5px;
+}
+.card:hover .card-icons a {
+  opacity: 1;
+}
+.circles {
+  position: absolute;
+  bottom: 0px;
+  left: 42.5%;
+  width: 100px;
+  padding-left: 10px;
+}
+.c1 {
+  padding-right: 10px;
+  color: #ffffff;
+}
+.c2 {
+  padding-right: 10px;
+  color: white;
+}
+.c3 {
+  color: white;
+}
+.c2:hover {
+  color: #1963ca;
+  filter: blur(1px);
+}
+.c3:hover {
+  color: #1963ca;
+  filter: blur(1px);
+}
+#About-Store {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #28313b 0%, #485461 100%);
+}
+#About-Store .p {
+  color: white;
+  font-size: 50px;
+  position: relative;
+  left: 60px;
+  top: 170px;
+  width: fit-content;
+}
+.About-Store.title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 80px;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+.About-Store.title::after {
+  content: "";
+  left: 0px;
+  bottom: 20px;
+  width: 37%;
+  height: 3px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+}
+.About-Store.title::before {
+  content: "";
+  right: 0px;
+  bottom: 20px;
+  width: 37%;
+  height: 3px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+}
+.about.card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 1200px;
+  height: 200px;
+  position: relative;
+  top: 220px;
+}
+.about.card:hover {
+  transform: none;
+}
+.about {
+  cursor: default;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  padding-top: 10px;
+}
+.about i {
+  color: #060402c7;
+  font-size: 50px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  animation: ziko 1s linear infinite alternate;
+}
+.about i:hover {
+  color: rgb(0, 0, 0);
+}
+.about h2 {
+  font-size: 16px;
+  cursor: text;
+  margin-bottom: 10px;
+}
+@keyframes ziko {
+  0% {
+    color: #000000;
+  }
+  100% {
+    color: rgba(205, 45, 45, 0.894);
+  }
+}
+.about p {
+  cursor: text;
+  font-weight: none;
+}
+footer {
+  display: flex;
+  height: 70px;
+  background-color: #060402;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 100%;
+}
+footer > p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1em;
+  position: relative;
+  left: 40px;
+  display: flex;
+  float: left;
+  width: 500px;
+  height: 70px;
+  align-items: center;
+}
+footer > p > a {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.fa-solid.fa-store {
+  padding-right: 10px;
+  color: rgb(255, 255, 255);
+}
+
+footer > div {
+  width: 230px;
+  position: absolute;
+  right: 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+footer > div > a {
+  color: white;
+  font-size: 1.5em;
+  margin-right: 30px;
+  transition: 0.9s;
+}
+footer > div > a:hover {
+  transform: translateY(-6px);
+  transition: 0.7s;
+}
+.fa-brands.fa-facebook:hover {
+  color: rgb(16, 16, 236);
+}
+.fa-brands.fa-instagram:hover {
+  color: rgb(202, 50, 75);
+}
+.fa-brands.fa-twitter:hover {
+  color: #3b6edd;
+}
+.fa-solid.fa-envelope:hover {
+  color: #d6d6d6;
+}
+@media (max-width: 1046px) {
+  .logo {
+    font-size: 1.3em;
+  }
+
+  .navigation a {
+    width: 120px;
+    font-size: 0.8em;
+  }
+  .welcome {
+    font-size: 80px;
+  }
+  .p1 {
+    font-size: 2.1em;
+  }
+}
+@media (max-width: 833px) {
+  .logo {
+    font-size: 1.3em;
+    position: absolute !important;
+    left: 100px;
+  }
+  .logoicon {
+    bottom: 10px;
+  }
+  .navigation a {
+    display: none;
+  }
+}
+@media (max-width: 555px) {
+  a.forme1 {
+    display: none;
+  }
+  a.forme2 {
+    display: none;
+  }
+  .welcome {
+    font-size: 50px;
+  }
+  .p1 {
+    color: rgb(28, 128, 28);
+  }
+  a.btnd {
+    background-color: #000000;
+    color: white;
+  }
+  a.btnd .fa-solid.fa-magnifying-glass {
+    color: white;
+  }
+  .section2 {
+    height: 290vh;
+  }
+  .cateinfo {
+    font-size: 29px;
+  }
+  .cateinfo p {
+    margin-top: 40px;
+  }
+  .fa-solid.fa-tag.fa-shake {
+    font-size: 30px;
+  }
+  .right-icon {
+    display: none;
+  }
+
+  .left-icon {
+    display: none;
+  }
+  .menu-card {
+    height: 240vh;
+    padding-left: 0px;
+  }
+
+  .card {
+    width: 200px;
+    margin-left: 22px;
+  }
+  .card:hover {
+    transform: translateY(0);
+  }
+
+  .info {
+    opacity: 1;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 150px;
+    background-color: #ffffff00;
+  }
+  .card:hover .info {
+    transform: translateY(0px);
+  }
+  .card-icons a {
+    opacity: 1;
+  }
+  a.Show.more {
+    width: 170px;
+    position: absolute;
+    bottom: 0px;
+    opacity: 1;
+    background-color: black;
+    color: white;
+  }
+  a.Show.more:hover {
+    background-color: transparent;
+    color: black;
+  }
+  .card:hover .Show.more {
+    position: absolute;
+    bottom: 0px;
+  }
+  #About-Store {
+    height: 120vh;
+  }
+  #About-Store .p {
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    width: 430px;
+  }
+  .About-Store.title {
+    font-size: 30px;
+  }
+  .About-Store.title::after {
+    bottom: 10px;
+    width: 30%;
+    height: 2px;
+    position: absolute;
+  }
+  .About-Store.title::before {
+    bottom: 10px;
+    width: 30%;
+    height: 2px;
+    position: absolute;
+  }
+  .about.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 200px;
+    right: 60px;
+  }
+  .about {
+    width: 160px;
+    height: 160px;
+    margin-left: 50px;
+  }
+  .about i {
+    color: #060402c7;
+    font-size: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .about i:hover {
+    color: rgb(0, 0, 0);
+  }
+  .about h2 {
+    font-size: 16px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+
+  footer > p {
+    font-size: 0.8em;
+    position: relative;
+    left: 10px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  footer > p > a {
+    display: none;
+  }
+  .fa-solid.fa-store {
+    display: none;
+  }
+
+  footer > div {
+    width: 230px;
+    position: absolute;
+    right: 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer > div > a {
+    color: white;
+    font-size: 1.4em;
+    margin-right: 0px;
+    transition: 0.9s;
+  }
+  footer > div > a:hover {
+    transform: translateY(-6px);
+    transition: 0.7s;
+  }
+}

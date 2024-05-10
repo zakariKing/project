@@ -1,0 +1,167 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script
+        src="https://kit.fontawesome.com/b3a4e89b33.js"
+        crossorigin="anonymous"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <!-- Chargement -->
+        <div id="loading">
+        <div class="load">
+        <div class="loader">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div></div>
+    </div>
+        <div id="content">
+            <!-- En-tête -->
+        <header>
+            <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+            <ul id="navbar">
+            <li><a href="index.html#hero">Accueil</a></li>
+                <li><a  href="shop.html">Boutique</a></li>
+                <li><a href="about.html" >À propos</a></li>
+                <li><a class="active" href="contact.html" >Contact</a></li>
+                <li><a href="cart.html"><i id="bag1" class="fa-solid fa-bag-shopping"></i></a></li>
+                <div class="btnsign">
+            <a href="sign up.html">
+            <button class="cssbuttons-io ">
+            <span> SignUp</span>
+            </button>
+            </a>
+            <a href="login.html">
+            <button class="cssbuttons-io io1">
+            <span> login</span>
+            </button>
+            </a></div>
+                <i id="close" class="fa-solid fa-xmark"></i>
+        </ul>
+        <div id="mobile">
+            <i id="bars" class="fa-solid fa-bars" style="z-index: 20p;"></i>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            
+            
+        </div>
+        </header>
+        <section id="Contact" class="section-m1 section-p1">
+            <h2>#Parlons-en</h2>
+            <p>Nous sommes prêts à vous écouter</p>
+        </section>
+        <section id="contact-details" class="section-p1">
+            <div class="details">
+                <h2>Visitez notre agence ou contactez-nous</h2>
+                <h3>Siège social</h3>
+            
+            <div>
+                <li>
+                    <i class="fa-solid fa-map"></i>
+                    <p>Avenue le Prince Héritier, Salé 11060</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+212-697-779-505</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>V-Expressshopping@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>De lundi à samedi : de 8h00 à 16h00 </p>
+                </li>
+            </div>
+            </div>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1695744.4374057774!2d-5.009050877162329!3d33.88963183914861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76bde388ee141%3A0xc191a178cb69d4af!2z2KfZhNmF2K_Ysdiz2Kkg2KfZhNi52YTZitinINmE2YTYqtmD2YbZiNmE2YjYrNmK2Kc!5e0!3m2!1sar!2sma!4v1702742315664!5m2!1sar!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </section>
+        <section id="form-details">
+            <form action="index.html">
+                <span>Laissez un message</span>
+                <h2>Nous sommes prêts à recevoir votre message</h2>
+                <input type="text" name="us" id="us" placeholder="Votre nom"  required>
+                <input type="email" name="email" id="email" placeholder="Votre adresse e-mail"  required>
+                <input type="text" name="subject" id="subject" placeholder="Sujet"  required>
+                <textarea name="message" id="message" cols="30" rows="8" placeholder="Message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="people">
+                <div>
+                <img src="img/rev2-modified.png" alt="" width="60px">
+                <p><b>Mr.ANAS</b><br><span>manager general</span><br>Téléphone : +212-630-502-036 <br>E-mail :Anaslouniri@gmail.com</p>
+            </div>
+                <div>
+                    <img src="img/rev1-modified.png" alt="" width="60px">
+                    <p><b>Mr.Yassine</b><br><span>Designer</span><br>Téléphone : +212-645-532-326 <br>E-mail : Yassine@gmail.com</p>
+                </div>
+                <div>
+                    <img src="img/rev3-modified.png" alt="" width="60px">
+                    <p><b>Mr.ZAKARIAE</b><br><span>Directeur de distribution</span><br>Téléphone : +212-630-502-036 <br>E-mail : ZakariaeBakkari@gmail.com</p>
+                </div>
+            </div>
+        </section>
+         <section id="newsletter" class="section-p1 section-m1">
+      <div class="newtext">
+        <h4>Entrer un code coupon </h4>
+        <p>
+           et ganer un reduction jusqu 70%, Inscrivez-vous pour recevoir coupon gratuit de 30%!
+          <span><a href="sign up.html" style="color:rgb(80, 139, 234); text-decoration: underline;">Inscrivez-vous</a></span>
+        </p>
+      </div>
+      <div class="form">
+        <div class="for">
+        <input type="text" id="coupon-inp"
+            placeholder="Entrez votre coupon" required />
+        <a class="normal" ><button onclick="Apply()" style="font-size: 22px;">Appliquer</button></a>
+        </div>
+      </div>
+      <span id="coupon-text"></span>
+
+    </section>
+        <footer class="section-p1">
+        <div class="col">
+            <a href="index.html#hero" class="logo">V-<span>Express</span> </a>
+            <h4>Contact</h4>
+            <p><b>Adresse : </b>rue royale Rabat sale maroc</p>
+            <p><b>Téléphone : </b>+2126-9734-7505</p>
+            <p><b>Horaires : </b>08h00-18h00, lun-sam</p>
+            <div class="follow">
+                <h4>Suivez-nous</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+        <h4>À propos</h4>
+        <a class="underline" href="about.html">À propos de nous</a>
+        <a class="underline" href="">Politique de confidentialité</a>
+        <a class="underline" href="">Conditions générales</a>
+        </div>
+        <div class="col">
+        <h4>Mon compte</h4>
+        <a class="underline" href="">S'inscrire</a>
+        <a class="underline" href="">Politique de confidentialité</a>
+        <a class="underline" href="">Conditions générales</a>
+        </div>
+        <div class="col payment">
+            <p>Passerelle de paiement sécurisée</p>
+            <a><img src="img/pngkey.com-credit-card-png-134808.png" alt=""
+            width="150"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy;2023 V-Express Shopping</p>
+        </div>
+        </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
